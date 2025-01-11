@@ -1,0 +1,168 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    padding: 1em 5%;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 1.8em;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #3498db;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 70vh;
+    position: relative;
+}
+
+.text-block {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.text-block h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.text-block p {
+    font-size: 1.5em;
+}
+
+/* Grid System */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-4, .col-6, .col-3 {
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 auto;
+}
+
+.col-4 {
+    width: 33.3333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+/* Featured News Section */
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2em;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

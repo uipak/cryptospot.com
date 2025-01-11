@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", serif;
+}
+
+.logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.nav-links {
+    background: #023047;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.banner {
+    width: 100%;
+    min-height: 70vh;
+    background: url('..images/banner.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-block {
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
